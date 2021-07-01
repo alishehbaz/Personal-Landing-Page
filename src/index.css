@@ -1,5 +1,17 @@
 body {
 
-    background-color: aqua;
+    /* background-color: aqua; */
+
+}
+
+@font-face {
+    font-family: hacked;
+    src: url(font/Hacked-KerX.ttf);
+}
+
+.heading {
+
+font-size: 30px;
+font-family: hacked;
 
 }

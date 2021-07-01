@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import baffle from 'baffle';
+import ParticleBackground from './ParticleBackground';
 
 
 
@@ -47,16 +48,16 @@ b.start()
   function blotterStuff () {
 
 
-    var text = new window.Blotter.Text("Hello", {
+    var text = new window.Blotter.Text("Ali", {
 
       family : "serif",
-      size : 120,
+      size : 220,
       fill : "#171717"
     });
 
     var material = new window.Blotter.ChannelSplitMaterial();
-    material.uniforms.uOffset.value = 0.286;
-    material.uniforms.uRotation.value = 50;
+    material.uniforms.uOffset.value = 1;
+    material.uniforms.uRotation.value = 45;
     material.uniforms.uApplyBlur.value = 1;
     material.uniforms.uAnimateNoise.value = 0.3;
 
@@ -67,17 +68,17 @@ b.start()
     var scope =  blotter.forText(text);
     scope.appendTo(document.body);
 
-    let id = setInterval(rotationChanger, 50);
+    let id = setInterval(rotationChanger, 30);
 
-    let x = 0.286;
+    let x = 1;
 
     function rotationChanger(){
 
-      if (x <  0.05){
+      if (x <  0.035){
         clearInterval(id);
       }
       else {
-        x = x - 0.05
+        x = x - 0.035
         material.uniforms.uOffset.value = x;
 
       }
@@ -85,20 +86,6 @@ b.start()
 
     }
 
-
-    // for (let x  = 0.05; x<0.286; x+= 0.05){
-
-    //   setTimeout(function() {material.uniforms.uOffset.value = x;}, 2000);
-
-      
-    //   var blotter =  new window.Blotter(material, {
-    //     texts : text
-    //   })
-  
-    //   var scope =  blotter.forText(text);
-
-
-    // }
 
   }
 
@@ -108,6 +95,7 @@ b.start()
 
 
 function Heading(){
+
 
 return (
 <>
@@ -137,10 +125,11 @@ function App() {
   return (
     
     <div className="App">
+    <ParticleBackground/>
     <Heading/>
-      <button onClick={blotterStuff}>
+      {/* <button onClick={blotterStuff}>
   Activate Lasers
-</button>
+</button> */}
     </div>
   );
 }

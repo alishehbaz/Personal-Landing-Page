@@ -39,56 +39,56 @@ b.start()
     });
     c.start()
         .set({ speed: 75 })
-        .text(text => 'Really long long lojnmg long string')
+        .text(text => 'Hi! I am Ali')
         .reveal(5000);
 
 
   }
 
 
-  function blotterStuff () {
+  // function blotterStuff () {
 
 
-    var text = new window.Blotter.Text("Ali", {
+  //   var text = new window.Blotter.Text("Ali", {
 
-      family : "serif",
-      size : 220,
-      fill : "#171717"
-    });
+  //     family : "serif",
+  //     size : 220,
+  //     fill : "#171717"
+  //   });
 
-    var material = new window.Blotter.ChannelSplitMaterial();
-    material.uniforms.uOffset.value = 1;
-    material.uniforms.uRotation.value = 45;
-    material.uniforms.uApplyBlur.value = 1;
-    material.uniforms.uAnimateNoise.value = 0.3;
+  //   var material = new window.Blotter.ChannelSplitMaterial();
+  //   material.uniforms.uOffset.value = 1;
+  //   material.uniforms.uRotation.value = 45;
+  //   material.uniforms.uApplyBlur.value = 1;
+  //   material.uniforms.uAnimateNoise.value = 0.3;
 
-    var blotter =  new window.Blotter(material, {
-      texts : text
-    })
+  //   var blotter =  new window.Blotter(material, {
+  //     texts : text
+  //   })
 
-    var scope =  blotter.forText(text);
-    scope.appendTo(document.body);
+  //   var scope =  blotter.forText(text);
+  //   scope.appendTo(document.body);
 
-    let id = setInterval(rotationChanger, 30);
+  //   let id = setInterval(rotationChanger, 30);
 
-    let x = 1;
+  //   let x = 1;
 
-    function rotationChanger(){
+  //   function rotationChanger(){
 
-      if (x <  0.035){
-        clearInterval(id);
-      }
-      else {
-        x = x - 0.035
-        material.uniforms.uOffset.value = x;
+  //     if (x <  0.035){
+  //       clearInterval(id);
+  //     }
+  //     else {
+  //       x = x - 0.035
+  //       material.uniforms.uOffset.value = x;
 
-      }
-
-
-    }
+  //     }
 
 
-  }
+  //   }
+
+
+  // }
 
 
 
@@ -130,7 +130,7 @@ function App() {
     <Heading/>
     <Glitch/>
       <button onClick={activateLasers}>
-  Activate Lasers
+  Liked that? Do it again!
 </button>
     </div>
   );

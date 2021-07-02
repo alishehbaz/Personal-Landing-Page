@@ -1,3 +1,9 @@
+@font-face {
+  font-family: hacked;
+  src: url(font/Hacked-KerX.ttf);
+}
+
+
 body {
     background: #222;
     min-height: 100vh;
@@ -5,7 +11,11 @@ body {
     place-items: center;
     color: white;
     font-family: sans-serif;
+
+
   }
+
+
   
   .glitch {
     font-size: 4rem;

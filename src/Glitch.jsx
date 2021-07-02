@@ -5,10 +5,10 @@ export default function Glitch(){
 
 return (
 
-<h1 className="glitch">
-  <span aria-hidden="true">Glitch text</span>
-  Glitch text
-  <span aria-hidden="true">Glitch text</span>
+<h1 className="glitch text-center">
+  <span aria-hidden="true">Loading ... </span>
+  Loading ...
+  <span aria-hidden="true"> Loading ...</span>
 </h1>
 
 );

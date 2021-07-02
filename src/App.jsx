@@ -3,11 +3,6 @@ import baffle from 'baffle';
 import ParticleBackground from './ParticleBackground';
 import Glitch from './Glitch';
 
-
-
-let text = "Hello Mom";
-
-
 // b.start();
 // b.stop();
 // b.reveal(1000);
@@ -25,22 +20,32 @@ function activateLasers(){
 console.log("actiavte lasters called");
 console.log("baffle");
 let b = baffle('.heading', {
-  characters: '██▒ ▒█▒░█ <█<░▒ ▓/> █▒▓░█ /█░▒ ▓▒█ >▒<░ ██/░',
+  characters: '██▒ ▒█▒░█ <█<░▒ ▓/> █▒▓░█ /█░▒ ▓▒█ >▒<░ ██/░123456789',
   speed: 75
 });
 b.start()
     .set({ speed: 75 })
-    .text(text => 'Really long long lojnmg long string')
+    .text(text => 'Software Engineer. Soccer Fanatic. Somewhat creative.')
     .reveal(5000);
 
     let c = baffle('.glitch', {
-      characters: '██▒ ▒█▒░█ <█<░▒ ▓/> █▒▓░█ /█░▒ ▓▒█ >▒<░ ██/░',
+      characters: '██▒ ▒█▒░█ <█<░▒ ▓/> █▒▓░█ /█░▒ ▓▒█ >▒<░ ██/░123456789',
       speed: 75
     });
     c.start()
         .set({ speed: 75 })
-        .text(text => 'Hi! I am Ali')
+        .text(text => 'Hi, I am Ali !')
         .reveal(5000);
+
+
+        let d = baffle('.home-button', {
+          characters: '██▒ ▒█▒░█ <█<░▒ ▓/> █▒▓░█ /█░▒ ▓▒█ >▒<░ ██/░123456789',
+          speed: 75
+        });
+        d.start()
+            .set({ speed: 75 })
+            .text(text => 'Liked that? do it again!')
+            .reveal(5000);
 
 
   }
@@ -123,14 +128,18 @@ return (
 
 function App() {
 
+  useEffect(() => {
+    setTimeout(activateLasers, 1500);
+  });
+
   return (
     
     <div className="App">
     <ParticleBackground/>
-    <Heading/>
     <Glitch/>
-      <button onClick={activateLasers}>
-  Liked that? Do it again!
+    <Heading/>
+<button className="home-button" onClick={activateLasers}>
+  Loading ...
 </button>
     </div>
   );

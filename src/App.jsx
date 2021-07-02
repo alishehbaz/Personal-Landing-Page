@@ -127,9 +127,9 @@ function App() {
     <div className="App">
     <ParticleBackground/>
     <Heading/>
-      {/* <button onClick={blotterStuff}>
+      <button onClick={activateLasers}>
   Activate Lasers
-</button> */}
+</button>
     </div>
   );
 }

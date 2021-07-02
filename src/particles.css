@@ -1,0 +1,22 @@
+.particles{
+    width:100vw;
+    height:100vh;
+	position:fixed;
+    overflow-y:hidden !important;
+    overflow-x: auto !important;
+   top: 0 !important;
+   right: 0px !important;
+   bottom: 0 !important;
+
+
+
+
+/* display: block;
+vertical-align: bottom;
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1);
+opacity: 1;
+-webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+transition: opacity .8s ease, transform 1.4s ease */
+}

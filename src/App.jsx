@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import baffle from 'baffle';
 import ParticleBackground from './ParticleBackground';
+import Glitch from './Glitch';
 
 
 
@@ -32,14 +33,14 @@ b.start()
     .text(text => 'Really long long lojnmg long string')
     .reveal(5000);
 
-    // let c = baffle('.heading2', {
-    //   characters: '██▒ ▒█▒░█ <█<░▒ ▓/> █▒▓░█ /█░▒ ▓▒█ >▒<░ ██/░',
-    //   speed: 75
-    // });
-    // c.start()
-    //     .set({ speed: 75 })
-    //     .text(text => 'Really long long lojnmg long string')
-    //     .reveal(5000);
+    let c = baffle('.glitch', {
+      characters: '██▒ ▒█▒░█ <█<░▒ ▓/> █▒▓░█ /█░▒ ▓▒█ >▒<░ ██/░',
+      speed: 75
+    });
+    c.start()
+        .set({ speed: 75 })
+        .text(text => 'Really long long lojnmg long string')
+        .reveal(5000);
 
 
   }
@@ -127,6 +128,7 @@ function App() {
     <div className="App">
     <ParticleBackground/>
     <Heading/>
+    <Glitch/>
       <button onClick={activateLasers}>
   Activate Lasers
 </button>

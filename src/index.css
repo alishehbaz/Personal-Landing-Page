@@ -63,3 +63,5 @@ font-family: hacked;
   .text-center {
       text-align: center;
   }
+
+::selection { background-color: #6a040f; }

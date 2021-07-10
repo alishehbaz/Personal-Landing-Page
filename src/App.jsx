@@ -34,7 +34,7 @@ b.start()
     });
     c.start()
         .set({ speed: 75 })
-        .text(text => 'Hi, I am Ali !')
+        .text(text => '< Hi, I am Ali ! />')
         .reveal(5000);
 
 

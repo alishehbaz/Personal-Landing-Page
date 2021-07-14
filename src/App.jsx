@@ -27,7 +27,8 @@ let b = baffle('.heading', {
 });
 b.start()
     .set({ speed: 75 })
-    .text(text => 'Software Engineer. Soccer Fanatic. Somewhat creative.')
+    // .text(text => 'Software Engineer. Soccer Fanatic. Somewhat creative.')
+    .text(text => 'Under Construction')
     .reveal(5000);
 
     let c = baffle('.glitch', {

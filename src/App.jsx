@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
+import { Grid } from '@material-ui/core';
 import baffle from 'baffle';
 import ParticleBackground from './ParticleBackground';
 import Glitch from './Glitch';
+import Menu from './Menu';
 
 // b.start();
 // b.stop();
@@ -134,14 +136,36 @@ function App() {
 
   return (
     
+    <Grid container
+    direction="row"
+    justifyContent="center"
+    alignItems="center"
+    spacing={2}>
+
+    <Grid  item xs={12} md={5} > 
+    
+    <Menu/>
+    </Grid>
+
+
+   
+    <Grid  item xs={12} md={7}> 
+    
     <div className="App">
+    
     <ParticleBackground/>
     <Glitch/>
     <Heading/>
 <button className="home-button" onClick={activateLasers}>
   Loading ...
 </button>
+
     </div>
+    </Grid>
+
+
+
+    </Grid>
   );
 }
 

@@ -131,7 +131,8 @@ return (
 function App() {
 
   useEffect(() => {
-    setTimeout(activateLasers, 1500);
+    // setTimeout(activateLasers, 1500);
+    activateLasers();
   });
 
   return (

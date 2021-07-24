@@ -1,8 +1,4 @@
-body {
 
-  
-
-}
 
 @font-face {
     font-family: hacked;
@@ -63,6 +59,31 @@ font-family: hacked;
   .text-center {
       text-align: center;
   }
+
+  /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+
+    .heading {
+
+        font-size: 10px;
+        font-family: hacked;
+        
+        }
+
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {     
+    
+    .heading {
+
+    font-size: 24px;
+    font-family: hacked;
+    
+    } 
+
+}
 
 ::-webkit-selection { background-color: #6a040f; }
 ::selection { background-color: #6a040f; }

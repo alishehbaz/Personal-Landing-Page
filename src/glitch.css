@@ -102,3 +102,38 @@ body {
     }
   }
   
+
+   /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+
+  .glitch {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+  
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  
+    animation: glitch 500ms infinite;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {     
+  
+  .glitch {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+  
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  
+    animation: glitch 500ms infinite;
+  }
+}

@@ -10,7 +10,7 @@ return (
   <a href="#contact">Experience</a>
   <a href="#about">Projects</a>
   <a href="#about">Resume</a>
-  <a href="#about">github</a>
+  <a href="https://www.github.com/alishehbaz" target="_blank" rel="noreferrer">github</a>
   <a href="https://www.linkedin.com/in/alishehbaz" target="_blank" rel="noreferrer">Linkedin</a>
 </div>
 

@@ -15,7 +15,7 @@ import Menu from './Menu';
 //     .reveal(1000);
 
 
-function activateLasers(){
+function glitchEffect(){
 
 
 
@@ -27,8 +27,7 @@ let b = baffle('.heading', {
 });
 b.start()
     .set({ speed: 75 })
-    // .text(text => 'Software Engineer. Soccer Fanatic. Somewhat creative.')
-    .text(text => 'Under Construction')
+    .text(text => 'Software Engineer. Soccer Fanatic. Somewhat creative.')
     .reveal(5000);
 
     let c = baffle('.glitch', {
@@ -133,41 +132,24 @@ function App() {
 
   useEffect(() => {
     // setTimeout(activateLasers, 1500);
-    activateLasers();
+    glitchEffect();
   });
 
   return (
     
-    <Grid container
-    direction="row"
-    justifyContent="center"
-    alignItems="center"
-    spacing={2}>
 
-    <Grid  item xs={12} md={5} > 
-    
-    <Menu/>
-    </Grid>
-
-
-   
-    <Grid  item xs={12} md={7}> 
     
     <div className="App">
     
     <ParticleBackground/>
     <Glitch/>
     <Heading/>
-<button className="home-button" onClick={activateLasers}>
+<button className="home-button" onClick={glitchEffect}>
   Loading ...
 </button>
 
     </div>
-    </Grid>
 
-
-
-    </Grid>
   );
 }
 

@@ -5,11 +5,15 @@ export default function Glitch(){
 
 return (
 
-<h1 className="glitch text-center">
+  <div className="glitch-container">
+
+<h1 className="glitch text-center glitch-font ">
   <span aria-hidden="true"> </span>
   {/* Loading ... */}
   <span aria-hidden="true"></span>
 </h1>
+
+</div>
 
 );
 

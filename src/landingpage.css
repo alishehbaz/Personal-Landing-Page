@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: hacked;
     src: url(font/Hacked-KerX.ttf);
@@ -11,29 +9,6 @@ font-size: 30px;
 font-family: hacked;
 
 }
-
-/* <---------------- ScrollBar settings -------------------------> */
-
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    /* box-shadow: inset 0 0 5px grey;  */
-    border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #243121; 
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #2b452a; 
-  }
 
   .home-button{
 
@@ -85,5 +60,3 @@ font-family: hacked;
 
 }
 
-::-webkit-selection { background-color: #6a040f; }
-::selection { background-color: #6a040f; }

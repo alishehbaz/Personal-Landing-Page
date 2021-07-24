@@ -5,15 +5,25 @@
 
 
 body {
-    background: #222;
+
     min-height: 100vh;
     display: grid;
     place-items: center;
-    color: white;
-    font-family: sans-serif;
+ 
 
 
   }
+
+
+.glitch-font {
+font-family: sans-serif; 
+}
+
+.glitch-container {
+color: white;
+  
+
+}
 
 
   

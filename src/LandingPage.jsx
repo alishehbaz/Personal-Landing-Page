@@ -1,19 +1,8 @@
 import { useEffect } from 'react';
-// import { Grid } from '@material-ui/core';
 import baffle from 'baffle';
 import ParticleBackground from './ParticleBackground';
 import Glitch from './Glitch';
-// import Menu from './Menu';
-
-// b.start();
-// b.stop();
-// b.reveal(1000);
-
-// b.start()
-//     .set({ speed: 100 })
-//     .text(text => 'Hi dad!')
-//     .reveal(1000);
-
+import './scrollbar.css';
 
 function glitchEffect(){
 
@@ -108,7 +97,7 @@ function Heading(){
 return (
 <>
 
-<div className="heading">
+<div className="heading glitch-container">
 
 
 </div>

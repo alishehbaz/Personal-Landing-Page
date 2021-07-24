@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import { Grid } from '@material-ui/core';
+// import { Grid } from '@material-ui/core';
 import baffle from 'baffle';
 import ParticleBackground from './ParticleBackground';
 import Glitch from './Glitch';
-import Menu from './Menu';
+// import Menu from './Menu';
 
 // b.start();
 // b.stop();

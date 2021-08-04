@@ -7,7 +7,8 @@ import Projects from './Projects';
 function App() {
 
     return (
-        <Router>
+       
+       <Router>
         <Route exact path="/">
         <Home />
         </Route>
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route exact path="/projects">
         <Projects />
+        </Route>
+        <Route exact path="/tech-stack">
+        <TechStack />
         </Route>
         <Route exact path="/landing-page">
         <LandingPage />

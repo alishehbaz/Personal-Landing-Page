@@ -10,8 +10,9 @@ I used ReactJS for this project, I used [particle.js](https://vincentgarreau.com
 
 open terminal and run these commands
 
-> ```bash
-> git clone https://github.com/alishehbaz/Personal-Landing-Page.git
-> npm install
-> npm start
-> ```
+```bash
+git clone https://github.com/alishehbaz/Personal-Landing-Page.git
+cd Personal-Landing-Page
+npm install
+npm start
+```
